@@ -1,2 +1,2 @@
 # RSInternLM
-Multi-modal Remote Sensing InternLM LLM
+Multi-modal Remote Sensing LLM based on InternLM
