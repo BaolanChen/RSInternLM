@@ -1,13 +1,19 @@
 # RSInternLM
 Multi-modal Remote Sensing LLM based on InternLM
 
-用于遥感图像理解的中文多模态大模型 | Chinese multimodal large-scale model for remote sensing image understanding
+用于遥感图像理解的多模态大模型 | multimodal large-scale model for remote sensing image understanding
 
 ## 项目简介
 目前的通用多模态大模型如LLaVA、MiniGPT-4、InstructBLIP等，在通用领域的不同任务上均上取得了较好的效果，但这些多模态大模型在垂直领域的应用效果仍有较大提升空间。
 由于自然图像与遥感图像存在较大域间差距，通用的多模态大模型在遥感图像分析中仍然存在较大的局限性，
 当前还没有用于遥感图像场景分析的多模态大模型，这在一定程度上受限于遥感图像相关数据集的稀缺，
 基于通用多模态大模型的微调为遥感大模型的研究提供了可能。
+
+InternLM是浦江实验室研发提出的大语言模型，具有以下模型优势与特点：
+
+- 卓越的推理性能：在数学推理方面取得了同量级模型最优精度，超越了 Llama3 和 Gemma2-9B。
+- 有效支持百万字超长上下文：模型在 1 百万字长输入中几乎完美地实现长文“大海捞针”，而且在 LongBench 等长文任务中的表现也达到开源模型中的领先水平。 可以通过 LMDeploy 尝试百万字超长上下文推理。更多内容和文档对话 demo 请查看这里。
+- 工具调用能力整体升级：InternLM2.5 支持从上百个网页搜集有效信息进行分析推理，相关实现将于近期开源到 Lagent。InternLM2.5 具有更强和更具有泛化性的指令理解、工具筛选与结果反思等能力，新版模型可以更可靠地支持复杂智能体的搭建，支持对工具进行有效的多轮调用，完成较复杂的任务。可以查看更多样例。
 
 ## 数据处理
 
