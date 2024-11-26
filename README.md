@@ -16,6 +16,8 @@ InternLM是浦江实验室研发提出的大语言模型，具有以下模型优
 - 工具调用能力整体升级：InternLM2.5 支持从上百个网页搜集有效信息进行分析推理，相关实现将于近期开源到 Lagent。InternLM2.5 具有更强和更具有泛化性的指令理解、工具筛选与结果反思等能力，新版模型可以更可靠地支持复杂智能体的搭建，支持对工具进行有效的多轮调用，完成较复杂的任务。可以查看更多样例。
 
 ## 数据处理
+RS Multimodal Instruction Dataset
+
 整理数据集用于遥感图像多模态大模型进行微调训练。
 
 ## 模型结构
@@ -24,11 +26,15 @@ InternLM是浦江实验室研发提出的大语言模型，具有以下模型优
 
 ## 测评结果
 
-## 演示结果
+## 模型定性结果
 
-### 场景理解
+### Scene Classification
 
-### 多轮对话
+### Visual Question Answering
+
+### Grounded Description 
+
+### Multi-Turn Conversation 
 
 ## 使用方法
 
@@ -43,8 +49,16 @@ InternLM是浦江实验室研发提出的大语言模型，具有以下模型优
 
 2.该项目只是对遥感图像大模型的初步探索，结果有很大改进空间，今后可能在更大的基座模型上进行微调，或在更大数据集上进行预训练。
 
+## 引用
+```bibtex
+  @article{chenbl2024rsinternlm,
+          title={RSInternLM: Multi-Modal Vision-Language Model for Remote Sensing},
+          author={BaolanChen},
+          journal={arxiv},
+          year={2024}
+  }
+```
 ## 致谢
 
-1.该项目参考了[RemoteGLM](https://github.com/lzw-lzw/RemoteGLM)进行方案设计。
-
-2.该项目利用ChatGPT处理数据数据集。
+1.该项目参考了[RemoteGLM](https://github.com/lzw-lzw/RemoteGLM)、[GeoChat](https://github.com/mbzuai-oryx/GeoChat)进行方案设计。
+2. 该项目利用ChatGPT处理数据数据集。
