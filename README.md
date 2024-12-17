@@ -24,6 +24,8 @@ RS Multimodal Instruction Dataset
 
 ## 训练过程
 
+### 模型训练验证结果
+
 ## 模型定量评测结果
 
 ### 评测指标
